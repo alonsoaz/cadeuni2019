@@ -15,6 +15,8 @@ nav {
 body {
   background: url("../img/2018.jpg");
   background-position: 40% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
@@ -79,7 +81,7 @@ section {
   line-height: 1.5em;
   border-radius: 8px;
   box-shadow: 3px 3px 5px black;
-  background-color: red;
+  background-color: rgba(66, 14, 187, 0.678);
 }
 
 /* Style the links inside the sidenav */
@@ -157,7 +159,7 @@ section {
 
 .videos {
   width: 80%;
-  background-color: blue;
+  /*background-color: blue;*/
   display: flex;
   margin-left: auto;
   margin-right: auto;
