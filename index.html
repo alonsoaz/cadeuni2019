@@ -1,20 +1,25 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>CADEuni 2019</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<title>CADEuni 2019</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
 <body id="background">
 
-		<header>
-				<video autoplay muted loop>
-						<source src="video/video.mp4" type="video/mp4">
-						El navegador no soporta videos.
-				</video>
-			</header>
-	
+	<header>
+		<video autoplay muted loop>
+			<source src="video/video.mp4" type="video/mp4">
+			El navegador no soporta videos.
+		</video>
+	</header>
+
 	<div class="contenido">
 		<div class="titulo">
 			<h1>#CADEuni 2019</h1>
@@ -22,54 +27,96 @@
 		</div>
 	</div>
 
-  <div style="text-align:left" id="mySidenav" class="sidenav">
-    <a href="https://www.ipae.pe/cade-universitario-2019/" id="about"><b>Evento</b><img id="abejita" width="30px" 
-			height="30px" src="icon/fa-people.png" aria-hidden="true"></img></a>
-		<a href="doc/PROGRAMA_CUNI_2019.pdf" id="projects"><b>Itinerario </b><img id="abejita" width="30px" 
-			height="30px" src="icon/fa-event.png" aria-hidden="true"></img></a>
-		<a href="https://twitter.com/search?q=%23CADEuni&src=typed_query&f=live" id="blog"><b>#CADEuni</b><img id="abejita" width="30px" 
-			height="30px" src="icon/fa-twtter.png" aria-hidden="true"></img></a>
-		<a href="https://www.facebook.com/HackSpacePeru/" id="contact"><b>Hack Space</b> <img id="abejita" width="30px" 
-			height="30px" src="icon/fa-hackspace.png" aria-hidden="true"></img></a>
+	<div style="text-align:left" id="mySidenav" class="sidenav">
+		<a href="https://www.ipae.pe/cade-universitario-2019/" id="about" target="_blank">
+			<b>Evento</b><img id="abejita" width="30px" height="30px" src="icon/fa-people.png" aria-hidden="true"></img></a>
+		<a href="doc/PROGRAMA_CUNI_2019.pdf" id="projects" target="_blank">
+			<b>Itinerario </b>
+			<img id="abejita" width="30px" height="30px" src="icon/fa-event.png" aria-hidden="true"></img></a>
+		<a href="https://twitter.com/search?q=%23CADEuni&src=typed_query&f=live" id="blog"
+			target="_blank"><b>#CADEuni</b><img id="abejita" width="30px" height="30px" src="icon/fa-twtter.png"
+				aria-hidden="true"></img></a>
+		<a href="https://www.facebook.com/HackSpacePeru/" id="contact" target="_blank">
+			<b>Hack Space</b> <img id="abejita" width="30px" height="30px" src="icon/fa-hackspace.png"
+				aria-hidden="true"></img></a>
 	</div>
 	<div id="hyperl">
 		<p>
-			por<b><a href="https://www.linkedin.com/in/alonso-azaldegui-162822192" class="linkz"> Alonso Azaldegui </a><img id="abejita" 
-				width="30px" height="30px" src="icon/fa-linkedin.png" aria-hidden="true">
-			</img></b>
+			por<b><a href="https://www.linkedin.com/in/alonso-azaldegui-162822192" class="linkz" target="_blank"> Alonso
+					Azaldegui </a>
+				<img id="abejita" width="30px" height="30px" src="icon/fa-linkedin.png" aria-hidden="true">
+				</img></b>
 		</p>
 	</div>
 	<section class="videos" style="overflow:auto">
 		<article class="marco">
 			<img src="img/percy.jpg" width="100%" alt="">
-			<b><a href="" class="linkz"> ver más...</a></b>
+			<a class="linkz" data-toggle="modal" href="#myModal"><b> ver más...</b></a>
 		</article>
 		<article class="marco">
 			<img src="img/anghiy.jpg" width="100%" alt="">
-			<b><a href="" class="linkz"> ver más...</a></b>
+			<a class="linkz" data-toggle="modal" href="#myModal"><b> ver más...</b></a>
 		</article>
 		<article class="marco">
-				<img src="img/christian.jpg" width="100%" alt="">
-				<b><a href="" class="linkz"> ver más...</a></b>
+			<img src="img/christian.jpg" width="100%" alt="">
+			<a class="linkz" data-toggle="modal" href="#myModal"><b> ver más...</b></a>
 		</article>
 		<article class="marco">
 			<img src="img/pablo.jpg" width="100%" alt="">
-			<b><a href="" class="linkz"> ver más...</a></b>
+			<a class="linkz" data-toggle="modal" href="#myModal"><b> ver más...</b></a>
 		</article>
 		<article class="marco">
 			<img src="img/lesly.jpg" width="100%" alt="">
-			<b><a href="" class="linkz"> ver más...</a></b>
+			<a class="linkz" data-toggle="modal" href="#myModal"><b> ver más...</b></a>
 		</article>
-		<div >&nbsp;</div>
+		<div>&nbsp;</div>
 	</section>
+
+
+	<div class="container">
+		<h2>Modal Login Example</h2>
+		<!-- Trigger the modal with a button -->
+		<a data-toggle="modal" href="#myModal">Open Modal</a>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header" style="padding:35px 50px;">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+					</div>
+					<div class="modal-body" style="padding:40px 50px;">
+						<form role="form">
+							<div class="form-group">
+								<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+								<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+								<input type="text" class="form-control" id="psw" placeholder="Enter password">
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox" value="" checked>Remember me</label>
+							</div>
+							<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>
+								Login</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+								class="glyphicon glyphicon-remove"></span> Cancel</button>
+						<p>Not a member? <a href="#">Sign Up</a></p>
+						<p>Forgot <a href="#">Password?</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 </body>
-<script type="text/javascript" src="js/init.js"></script>
+
 </html>
-
-
-
-
-
-
-
-

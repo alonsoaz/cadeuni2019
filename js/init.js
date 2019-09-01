@@ -1,4 +1,4 @@
-let ENTREVISTADOS = [{ nombre: "Pablo", img: "../img/percy.jpg" }];
+/*let ENTREVISTADOS = [{ nombre: "Pablo", img: "../img/percy.jpg" }];
 
 function init() {
   let marco = document.createElement("article");
@@ -11,4 +11,9 @@ function init() {
   videos[0].appendChild(marco);
 }
 
-window.onload = init;
+window.onload = init;*/
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
