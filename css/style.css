@@ -176,3 +176,54 @@ section {
 .modal-footer {
 	background-color: #f9f9f9;
 }
+
+.mtable1 {
+  background: crimson;
+  color: white;
+  border: solid 3px black;
+  margin: 0px 5px;
+  padding: 10px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.mtable2 {
+  background: aquamarine;
+  color: blueviolet;
+  border: solid 3px black;
+  margin: 0px 5px;
+  padding: 10px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.mtable3 {
+  background: coral;
+  color: white;
+  border: solid 3px black;
+  margin: 0px 5px;
+  padding: 10px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.mtable4 {
+  background: blue;
+  color: white;
+  border: solid 3px black;
+  margin: 0px 5px;
+  padding: 10px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px black;
+} 
+
+.table4,th {
+
+	border: 1px solid white;
+
+}
+
